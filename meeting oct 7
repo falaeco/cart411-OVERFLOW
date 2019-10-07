@@ -32,3 +32,12 @@ Proximity Sensors;
 Prototype container;
 Fishbowl;
 Waterflow Sensor;
+
+
+NEW PLAN;
+Kinect sensor situated on top of install
+blob detection to tell where ppl stand when ppl stand for longer then predtermined amount of second local area of vegitation dies
+once person moves, vegetation goes back to life
+everytime veg death is triggered we incriment a counter
+when counter exceeds a number we drop ink into the water
+
