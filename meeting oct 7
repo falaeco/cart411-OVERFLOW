@@ -40,4 +40,5 @@ blob detection to tell where ppl stand when ppl stand for longer then predtermin
 once person moves, vegetation goes back to life
 everytime veg death is triggered we incriment a counter
 when counter exceeds a number we drop ink into the water
+once water overflows we detect with moisture sensor and turn it off
 
