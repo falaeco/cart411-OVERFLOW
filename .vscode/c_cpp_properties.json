@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/nicprudhomme/Documents/Arduino/libraries/FastLED",
+                "/Users/nicprudhomme/Library/Arduino15/packages/esp8266/tools/**",
+                "/Users/nicprudhomme/Library/Arduino15/packages/esp8266/hardware/esp8266/2.6.1/**"
+            ],
+            "forcedInclude": [],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
+}
