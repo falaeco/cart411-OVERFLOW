@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
+		"rect" : [ 34.0, 80.0, 1212.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,67 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 679.0, 971.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 668.0, 842.0, 31.0, 22.0 ],
+					"text" : "play"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "Crucial SSD:/Users/allanpichardo/Documents/Dev/cart411-OVERFLOW/max/drop.mp3",
+								"filename" : "drop.mp3",
+								"filekind" : "audiofile",
+								"loop" : 0,
+								"content_state" : 								{
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"mode" : [ "basic" ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-55",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 679.0, 917.0, 150.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "newobj",
@@ -17491,6 +17552,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-55", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 1 ],
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
@@ -17695,7 +17777,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"order" : 0,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-91", 0 ],
+					"order" : 1,
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -17748,6 +17839,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "drop.mp3",
+				"bootpath" : "~/Documents/Dev/cart411-OVERFLOW/max",
+				"patcherrelativepath" : ".",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "jit.gl.syphonserver.mxo",
 				"type" : "iLaX"
 			}
