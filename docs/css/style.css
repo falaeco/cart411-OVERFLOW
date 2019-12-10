@@ -6,6 +6,13 @@ body { font-size: 16px; line-height: 1.8; color: #6c757d; font-family: -apple-sy
 
 h1, h2, h3, h4, h5 { color: #000; }
 
+.templateux-portfolio-overlap img {
+  width: 700px;
+  height: 400px;
+}
+
+img { object-fit: cover; }
+
 a { -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; }
 
 a:hover, a:active, a:focus { text-decoration: none; outline: none; }
